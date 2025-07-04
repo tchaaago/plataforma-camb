@@ -31,3 +31,14 @@
 .docentes h3 {
     font-size: 40px;
 }
+
+.laboratorios {
+    width: 100%;
+    min-width: 100%;
+    padding-left: 240px;
+    background-color: var(--brancosoft);
+}
+
+.laboratorios h4 {
+  font-size: 40px;
+}

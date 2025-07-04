@@ -6,7 +6,7 @@ function Footer() {
       <div>
         <img
           className="footerLogo"
-          src="assinatura.svg"
+          src="./assets/assinatura.svg"
           alt="assinatura"
           width={158}
           height={92}
@@ -29,13 +29,24 @@ function Footer() {
           href="https://www.instagram.com/cienciasambientaisufc/"
           target="_blank"
         >
-          <img class="instagramIcon" src="instagram.svg" alt="instagram" width={50} height={50}/>
+          <img
+            class="instagramIcon"
+            src="./assets/instagram.svg"
+            alt="instagram"
+            width={50}
+            height={50}
+          />
         </a>
         <a
           href="https://www.facebook.com/CienciasAmbientaisUfc/?locale=pt_BR"
           target="_blank"
         >
-          <img class="facebookIcon" src="facebook.svg" alt="facebook" height={50}/>
+          <img
+            class="facebookIcon"
+            src="./assets/facebook.svg"
+            alt="facebook"
+            height={50}
+          />
         </a>
       </div>
     </footer>

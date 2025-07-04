@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: #5F6C37;
+    color: white;
+}
+
+.headerLogo {
+    padding-top: 2px;
+    width: 130px;
+}

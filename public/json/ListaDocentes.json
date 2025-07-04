@@ -2,91 +2,91 @@
   {
     "nome": "Antônio Geraldo Ferreira",
     "infoDocente": "Doutor em Física pela Universitat de València, Espanha (2012).",
-    "img_docente": "/tiburcio.png",
+    "img_docente": "./assets/tiburcio.png",
     "lattes": "https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4767964J5"
   },
   {
     "nome": "Caroline Vieira Feitosa",
     "infoDocente": "Doutora em Oceanografia Biológica pela Universidade Federal de Pernambuco, Brasil (2009).",
-    "img_docente": "/tiburcio.png",
+    "img_docente": "./assets/tiburcio.png",
     "lattes": "https://lattes.cnpq.br/"
   },
   {
     "nome": "Cristina de Almeida Rocha Barreira",
     "infoDocente": "Doutora em Oceanografia Biológica pela Universidade Federal do Rio Grande, Brasil (2001).",
-    "img_docente": "/tiburcio.png",
+    "img_docente": "./assets/tiburcio.png",
     "lattes": "https://lattes.cnpq.br/"
   },
   {
     "nome": "Danielle Sequeira Garcez",
     "infoDocente": "Doutora em Geografia pela Universidade Federal do Rio de Janeiro, Brasil (2007).",
-    "img_docente": "/tiburcio.png",
+    "img_docente": "./assets/tiburcio.png",
     "lattes": "https://lattes.cnpq.br/"
   },
   {
     "nome": "Eduardo Sávio Passos Rodrigues Martins",
     "infoDocente": "Doutor em Engenharia Civil e Ambiental pela Cornell University, EUA (2001).",
-    "img_docente": "/tiburcio.png",
+    "img_docente": "./assets/tiburcio.png",
     "lattes": "https://lattes.cnpq.br/"
   },
   {
     "nome": "Fábio de Oliveira Matos",
     "infoDocente": "Doutor em Geografia pela Universidade Federal do Ceará, Brasil (2013)",
-    "img_docente": "/tiburcio.png",
+    "img_docente": "./assets/tiburcio.png",
     "lattes": "https://lattes.cnpq.br/"
   },
   {
     "nome": "Gandhi Rádis Baptista",
     "infoDocente": "Doutor em Bioquímica pela Universidade de São Paulo, Brasil (2002).",
-    "img_docente": "/tiburcio.png",
+    "img_docente": "./assets/tiburcio.png",
     "lattes": "https://lattes.cnpq.br/"
   },
   {
     "nome": "Juliana Barroso de Melo",
     "infoDocente": "Doutora em Planejamento Territorial e Gestão Ambiental pela Universitat de Barcelona, Espanha (2013).",
-    "img_docente": "/tiburcio.png",
+    "img_docente": "./assets/tiburcio.png",
     "lattes": "https://lattes.cnpq.br/"
   },
   {
     "nome": "Kamila Vieira Mendonça",
     "infoDocente": "Doutora em Economia pela Universidade Federal do Ceará, Brasil (2014).",
-    "img_docente": "/tiburcio.png",
+    "img_docente": "./assets/tiburcio.png",
     "lattes": "https://lattes.cnpq.br/"
   },
   {
     "nome": "Lidriana de Souza Pinheiro",
     "infoDocente": "Doutora em Oceanografia pela Universidade Federal de Pernambuco, Brasil (2003).",
-    "img_docente": "/tiburcio.png",
+    "img_docente": "./assets/tiburcio.png",
     "lattes": "https://lattes.cnpq.br/"
   },
   {
     "nome": "Luiz Drude de Lacerda",
     "infoDocente": "Doutor em Ciências Biológicas (Biofísica) pela Universidade Federal do Rio de Janeiro, Brasil (1983).",
-    "img_docente": "/tiburcio.png",
+    "img_docente": "./assets/tiburcio.png",
     "lattes": "https://lattes.cnpq.br/"
   },
   {
     "nome": "Marcelo Freire Moro",
     "infoDocente": "Doutor em Biologia Vegetal pela Universidade Estadual de Campinas, Brasil (2013).",
-    "img_docente": "/tiburcio.png",
+    "img_docente": "./assets/tiburcio.png",
     "lattes": "https://lattes.cnpq.br/"
   },
   {
     "nome": "Marcelo de Oliveira Soares",
     "infoDocente": "Doutor em Geociências pela Universidade Federal do Rio Grande do Sul, Brasil (2010).",
-    "img_docente": "/tiburcio.png",
+    "img_docente": "./assets/tiburcio.png",
     "lattes": "https://lattes.cnpq.br/"
   },
   {
     "nome": "Marcus Vinicius Chagas da Silva",
     "infoDocente": "Mestre em Geografia pela Universidade Estadual do Ceará, Brasil (2007).",
-    "img_docente": "/tiburcio.png",
+    "img_docente": "./assets/tiburcio.png",
     "lattes": "https://lattes.cnpq.br/"
   },
   {
     "nome": "Maria Ozilea Bezerra Menezes",
     "infoDocente": "Doutora em Ciências do Mar pela Universitat de Barcelona, Espanha (2000).",
-    "img_docente": "/tiburcio.png",
+    "img_docente": "./assets/tiburcio.png",
     "lattes": "https://lattes.cnpq.br/"
   }
 ]
