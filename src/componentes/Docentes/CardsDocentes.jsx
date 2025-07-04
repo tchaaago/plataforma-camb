@@ -22,10 +22,10 @@ function DocentesCAMB() {
               <img className="img_docente" src={img_docente} alt={nome}></img>
               <section className="info">
                 <span className="nome">{nome}</span>
-                <p className="infoDocente">{infoDocente}</p>
-                <a className="lattes" href={lattes} target="_blank">
-                  Currículo Lattes
-                </a>
+                <p className="infoDocente">{infoDocente}</p> <br/>
+                <section className="lattes">
+                  <a  href={lattes} target="_blank">Currículo Lattes</a>
+                </section>
               </section>
             </section>
           );

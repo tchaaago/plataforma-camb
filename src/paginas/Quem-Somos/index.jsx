@@ -49,8 +49,8 @@ function QuemSomos() {
       </section>
       <div className={styles.docentes}>
         <h3>Docentes</h3> <br />
-        <DocentesCAMB />
       </div>
+      <DocentesCAMB /> <br />
       <div className={styles.laboratorios}>
         <h4>Laboratórios e Infraestrutura</h4>
       </div>
