@@ -1,0 +1,60 @@
+/* css da page home */
+.home {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 100px 225px;
+    overflow: hidden; /* sobrepoe a navbar e esconde o grafismo */
+    background-color: var(--brancosoft);
+
+}
+
+.home p {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.home span {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.home img {
+    height: 1200px;
+    position: relative;
+    top: -550px; /* move a imagem para cima um pouco para fora da tela */
+    right: -320px;  /* move a imagem para a direita um pouco para fora da tela */
+    pointer-events: none;
+
+}
+
+.homeNoticias {
+    color: var(--brancosoft );
+    background-color: var(--verdesecundário);
+    display: flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    width: 100%;
+    height: 727px;
+    position: relative;
+    top: -700px;
+}
+
+.homeNoticias h1 {
+    font-size: 40px;
+    padding: 40px 225px;
+}
+
+.homeParagrafo {
+    width: 100%;
+    background-color: var(--brancosoft);
+    display: flex;
+    flex-direction: column;
+    padding: 100px 225px;
+}
+
+.homeParagrafo p {
+    font-size: 24px;
+}

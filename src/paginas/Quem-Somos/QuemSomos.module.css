@@ -1,0 +1,33 @@
+.sobre {
+    width: 100%;
+    min-width: 100%;
+    padding: 70px 240px;
+    background-color: var(--brancosoft);
+}
+
+.sobre h2 {
+    font-size: 40px;
+}
+
+.sobre p {
+    font-size: 16px;
+}
+
+.img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.docentes {
+    width: 100%;
+    min-width: 100%;
+    padding-left: 240px;
+    background-color: var(--brancosoft);
+}
+
+.docentes h3 {
+    font-size: 40px;
+}

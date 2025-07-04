@@ -1,0 +1,22 @@
+.error {
+    padding-top: 2rem;
+    color: var(--laranja);
+}
+
+.textos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textoError {
+    font-size: 200px;
+    color: var(--laranja);
+    font-weight: bolder;
+}
+
+.texto_vermelho {
+    color: var(--laranja);
+    font-weight: bolder;
+}

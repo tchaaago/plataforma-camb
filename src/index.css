@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Atkinson Hyperlegible', monospace;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --verdeprimario: #8c9955;
+  --verdesecundário: #5c6634;
+  --verdeterciário: #2a3318;
+  --verdequaternário: #bee0c6;
+  --laranja: #df6d26;
+  --begeprimário: #fcefcc;
+  --begesecundário: #ebca95;
+  --begeterciário: #dca15d;
+  --azulprimário: #2e7881;
+  --azulsecundário: #013c5a;
+  --brancosoft: #fbf9ed;
+
+
+}
