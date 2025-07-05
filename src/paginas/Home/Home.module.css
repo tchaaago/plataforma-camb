@@ -1,12 +1,15 @@
 /* css da page home */
+
+body {
+    background-color: var(--brancosoft);
+}
+
 .home {
     width: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+    flex-direction: column;
     padding: 100px 225px;
     overflow: hidden; /* sobrepoe a navbar e esconde o grafismo */
-    background-color: var(--brancosoft);
 
 }
 
@@ -24,10 +27,9 @@
 .home img {
     height: 1200px;
     position: relative;
-    top: -550px; /* move a imagem para cima um pouco para fora da tela */
-    right: -320px;  /* move a imagem para a direita um pouco para fora da tela */
+    top: -850px; /* move a imagem para cima um pouco para fora da tela */
+    right: -520px;  /* move a imagem para a direita um pouco para fora da tela */
     pointer-events: none;
-
 }
 
 .homeNoticias {

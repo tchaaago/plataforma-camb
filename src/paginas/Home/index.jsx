@@ -6,8 +6,8 @@ function Home() {
     <>
       <section className={ styles.home }>
         <div className={ styles.hero }>
-          <p>Graduação em Ciências Ambientais: Transforme sua paixão pelo meio ambiente em uma carreira de impacto.</p><br />
-          <span>Na UFC, você encontra estrutura de ponta, professores renomados e um mercado de trabalho cheio de oportunidades.</span><br />
+          <p>Graduação em Ciências<br/> Ambientais: Transforme<br/> sua paixão pelo meio<br/> ambiente em uma<br/> carreira de impacto.</p><br />
+          <span>Na UFC, você encontra estrutura de ponta, professores renomados e um<br/> mercado de trabalho cheio de oportunidades.</span>
         </div>
         <figure>
           <img className="img-home" src="./assets/grafismo-home.svg" alt="Imagem de Home"/>
