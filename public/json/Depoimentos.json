@@ -1,0 +1,22 @@
+[
+  {
+    "nome": "Fernanda Lima",
+    "perfil": "Egressa, Turma de 2018",
+    "depoimento": "Participar de projetos de extensão transformou minha visão sobre o impacto da ciência na sociedade. Hoje, trabalho como consultora ambiental aplicando o que aprendi na graduação. O curso foi decisivo para minha atuação profissional."
+  },
+  {
+    "nome": "Prof. Dr. Ricardo Silva",
+    "perfil": "Docente",
+    "depoimento": "Ensinar no curso é gratificante por sua proposta interdisciplinar e engajada. A formação vai além do conteúdo: desenvolve consciência crítica. Os alunos saem preparados para transformar o meio em que vivem."
+  },
+  {
+    "nome": "Letícia Andrade",
+    "perfil": "Estudante, 7º semestre",
+    "depoimento": "Descobri minha vocação participando de projetos em escolas públicas. Cresci como estudante e como pessoa. Quero seguir carreira na área de políticas públicas ambientais."
+  },
+  {
+    "nome": "Mateus Oliveira",
+    "perfil": "Egresso, Empreendedor Ambiental",
+    "depoimento": "A base técnica e crítica do curso me impulsionou a criar uma startup de soluções sustentáveis. A interdisciplinaridade e os debates me deram criatividade e visão ampla. Foi uma formação que mudou meu rumo."
+  }
+]

@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+.card {
+    width: 700px;
+    height: 200px;
+    background-color: var(--verdesecundário);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 2rem;
+    
+}
+
+.info h1 {
+  font-size: 25px;
+  color: var(--brancosoft);
+}
