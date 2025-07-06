@@ -68,3 +68,8 @@ body {
     width: 500px;
     border-radius: 5px;
 }
+
+.depoimentos h2 {
+    font-size: 40px;
+    padding: 5px 240px;
+}
