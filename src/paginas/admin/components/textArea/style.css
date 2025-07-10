@@ -1,0 +1,28 @@
+.textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.6rem;
+}
+
+.textarea-wrapper label {
+  margin-bottom: 0.6rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.textarea-wrapper textarea {
+  padding: 1rem;
+  font-size: 1.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; /* permite redimensionar verticalmente */
+  min-height: 80px;
+  font-family: inherit;
+  background-color: #fff;
+  color: #000;
+}
+
+.textarea-wrapper textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}

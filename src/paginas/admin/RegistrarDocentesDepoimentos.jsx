@@ -1,73 +1,41 @@
 import { useState } from "react";
-import { ImageUpload } from "./components/imageUpload/ImageUpload";
-import { InputText } from "./components/inputText/inputText";
-import { DocenteService } from "../../services/docente-service";
+import { DocentesForm } from "./components/docentesForm/DocentesForm";
+import { DepoimentosForm } from "./components/depoimentosForm/DepoimentosForm";
 
 export const RegistrarDocentesDepoimentos = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    degree: "",
-    lattes: "",
-    image: null,
-  });
-
-  const handleInputChange = (e) => {
-    const { id, value } = e.currentTarget;
-    setFormData((prevState) => ({
-      ...prevState,
-      [id]: value,
-    }));
-  };
-
-  const handleImageChange = (file) => {
-    setFormData((prevState) => ({
-      ...prevState,
-      image: file,
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const id = await DocenteService.create(
-        {
-          name: formData.name,
-          degree: formData.degree,
-          lattes: formData.lattes,
-        },
-        formData.image
-      );
-      console.log("Docente registrado com sucesso:", id);
-    } catch (err) {
-      console.error("Erro ao registrar docente:", err);
-    }
-  };
+  const [selectedForm, setSelectedForm] = useState("docentes");
 
   return (
     <div>
-      <main>Registrar Material</main>
-      <form onSubmit={handleSubmit}>
-        <ImageUpload onImageChange={handleImageChange} />
-        <InputText
-          id="name"
-          placeholder="Nome do docente"
-          value={formData.name}
-          onChange={handleInputChange}
-        />
-        <InputText
-          id="degree"
-          placeholder="Formação"
-          value={formData.degree}
-          onChange={handleInputChange}
-        />
-        <InputText
-          id="lattes"
-          placeholder="Link do Currículo Lattes"
-          value={formData.lattes}
-          onChange={handleInputChange}
-        />
-        <button type="submit">Registrar</button>
-      </form>
+      <main>
+        <h1>Registrar Material</h1>
+
+        <div style={{ marginBottom: "2rem" }}>
+          <label>
+            <input
+              type="radio"
+              name="tipo"
+              value="docentes"
+              checked={selectedForm === "docentes"}
+              onChange={() => setSelectedForm("docentes")}
+            />
+            Docentes
+          </label>
+
+          <label style={{ marginLeft: "2rem" }}>
+            <input
+              type="radio"
+              name="tipo"
+              value="depoimentos"
+              checked={selectedForm === "depoimentos"}
+              onChange={() => setSelectedForm("depoimentos")}
+            />
+            Depoimentos
+          </label>
+        </div>
+
+        {selectedForm === "docentes" ? <DocentesForm /> : <DepoimentosForm />}
+      </main>
     </div>
   );
 };
