@@ -6,7 +6,7 @@ function Footer() {
       <div>
         <img
           className="footerLogo"
-          src="./assets/assinatura.svg"
+          src="/assets/assinatura.svg"
           alt="assinatura"
           width={158}
           height={92}
@@ -31,7 +31,7 @@ function Footer() {
         >
           <img
             className="instagramIcon"
-            src="./assets/instagram.svg"
+            src="/assets/instagram.svg"
             alt="instagram"
             width={50}
             height={50}
@@ -43,7 +43,7 @@ function Footer() {
         >
           <img
             className="facebookIcon"
-            src="./assets/facebook.svg"
+            src="/assets/facebook.svg"
             alt="facebook"
             height={50}
           />

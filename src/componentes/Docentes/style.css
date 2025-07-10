@@ -1,55 +1,44 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: 0;
-}
-
-body {
-  width: 100%;
-  min-height: 100%;
-  background-color: var(--brancosoft);
-  color: black;
-}
-
 .carrossel {
-  max-width: 100%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   background-color: var(--brancosoft);;
-  align-items: flex-start;
   overflow-x: auto;
+  overflow-y: hidden;
   scroll-behavior: smooth;
   gap: 5rem;
 }
 
-.carrossel .docentes{
+.docentes {
   display: flex;
+  flex: none;
+  width: 55rem;
+  gap: 10px;
   background-color: var(--verdesecundário);
   color: var(--brancosoft);
-  width: 550px;
-  height: 100%;
-  gap: 1rem;
-  flex: none;
 }
 
-.carrossel .docentes .img_docente img {
+.container_image {
+  max-width: 180px;
+  overflow: hidden;
+  flex-shrink: 0;
+  img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+.info {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.carrossel .docentes .info {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  flex: 1;
 }
 
-.img_docente {
-  width: 180px;
-}
-
-.carrossel .docentes .info span {
+ .info span {
   font-size: 20px;
   font-weight: bolder;
   display: block;
@@ -58,11 +47,11 @@ body {
   margin: 10px 0;
 }
 
-.carrossel .docentes .info p {
+.info p {
   font-size: 16px;
   text-align: left;
   padding: 10px;
-
+  margin-bottom: 3rem;
 }
 
 .lattes {
@@ -74,7 +63,7 @@ body {
   background-color: #007bff;
   font-size: 14px;
   text-decoration: none;
-  
+  margin-top: auto;
 }
 
 .lattes a {

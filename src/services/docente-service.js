@@ -1,4 +1,4 @@
-import { collection, addDoc, Timestamp } from "firebase/firestore";
+import { collection, addDoc, Timestamp, getDocs } from "firebase/firestore";
 import { db, storage } from "../firebase/config";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 
@@ -38,6 +38,22 @@ export const DocenteService = {
       return docRef.id;
     } catch (error) {
       console.error("Erro ao criar docente:", error);
+      throw error;
+    }
+  },
+
+async findAll() {
+    try {
+      const snapshot = await getDocs(collection(db, DOCENTES_COLLECTION));
+
+      const docentes = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+
+      return docentes;
+    } catch (error) {
+      console.error("Erro ao buscar docentes:", error);
       throw error;
     }
   },

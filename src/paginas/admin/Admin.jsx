@@ -21,7 +21,7 @@ export const Admin = () => {
         <Sidebar />
         <Outlet />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
