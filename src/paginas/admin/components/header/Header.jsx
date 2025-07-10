@@ -6,7 +6,7 @@ export const Header = () => {
       <div>
         <img
           className="headerLogo"
-          src="./assets/logo_horizontal_branco.svg"
+          src="././././assets/logotipo.svg"
           alt="logo"
         />
       </div>

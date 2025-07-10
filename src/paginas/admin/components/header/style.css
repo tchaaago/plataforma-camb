@@ -1,14 +1,15 @@
 .header {
+    width: 100%;
+    height: 70px;
+    background-color: var(--verdesecundário);
+    color: var(--brancosoft);
+
     display: flex;
-    flex-direction: row;    
     align-items: center;
-    justify-content: center;
-    padding: 12px;
-    background-color: #5F6C37;
-    color: white;
+    justify-content: space-around;
 }
 
 .headerLogo {
-    padding-top: 2px;
-    width: 130px;
+    height: 42px;
+
 }

@@ -12,17 +12,17 @@ function Footer() {
           height={92}
         />
       </div>
-      <div class="footerAddress">
+      <div className="footerAddress">
         <strong>Endereço</strong>
         <br /> Av. da Abolição 3207, Meireles, Fortaleza/CE
         <br /> CEP 60.165-081
       </div>
-      <div class="footerText">
+      <div className="footerText">
         <strong>Contato</strong>
         <br /> cienciasambientais@ufc.br
         <br /> (85) 3366.7059
       </div>
-      <div class="footerText">
+      <div className="footerText">
         <strong>Redes Sociais</strong>
         <br />
         <a
@@ -30,7 +30,7 @@ function Footer() {
           target="_blank"
         >
           <img
-            class="instagramIcon"
+            className="instagramIcon"
             src="./assets/instagram.svg"
             alt="instagram"
             width={50}
@@ -42,7 +42,7 @@ function Footer() {
           target="_blank"
         >
           <img
-            class="facebookIcon"
+            className="facebookIcon"
             src="./assets/facebook.svg"
             alt="facebook"
             height={50}
