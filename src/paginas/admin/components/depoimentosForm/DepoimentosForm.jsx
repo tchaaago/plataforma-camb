@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { InputText } from "../inputText/inputText";
 import { DepoimentosService } from "../../../../services/depoimentos-service";
-import { Textarea } from "../textArea/TextArea";
+import { Textarea } from "../textArea/Textarea";
 
 export const DepoimentosForm = () => {
   const [formData, setFormData] = useState({
