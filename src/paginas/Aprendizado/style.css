@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.matriz {
+  width: 100%;
+  height: 100%;
+  background-color: var(--cinzasoft);
+  padding: 50px 350px;
+}
+
+.apresentacao h1 {
+  font-size: 48px;
+  color: var(--verdeterciario);
+}
+
+.apresentacao p {
+  font-size: 16px;
+  color: var(--verdeterciario);
+  padding-top: 12px;
+  padding-bottom: 30px;
+}
+
+.banner {
+  width: 500px;
+  height: 460px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.corpo-matriz {
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+  background-color: var(--brancosoft);
+  display: flex;
+  gap: 8rem;
+}
+
+.linkMatriz {
+  margin: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.linkMatriz a {
+  width: 90px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--verdeterciario);
+  border: 1px solid var(--verdesecundario);
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.consultaSemestre {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.botao-semestre {
+  font-family: "Atkinson Hyperlegible", monospace;;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--brancosoft);
+  border: none;
+  border-radius: 10px;
+  width: 250px;
+  height: 80px;
+  padding: 1.5rem;
+  background-color: var(--verdesecundario);
+  cursor: pointer;
+}
+
+.botao-semestre-optativa {
+  padding-top: 10px;
+  width: 100%;
+}
+
+.botao-semestre:hover {
+  background-color: var(--verdeterciario);
+  transition: 1s;
+}
+
+.linkMatriz a:hover {
+  background-color: var(--laranja);
+  color: var(--brancosoft);
+  border: none;
+  transition: 1s;
+}
