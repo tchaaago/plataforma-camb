@@ -1,6 +1,6 @@
 import { ArrowLeft } from "lucide-react";
 import "./style.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 export const Sidebar = () => {
   const location = useLocation();
@@ -11,7 +11,7 @@ export const Sidebar = () => {
     return (
       <aside className="sidebar-alt">
         <Link to="/admin">
-          <ArrowLeft />
+          <ArrowLeft size={32} strokeWidth={3} className="arrowLeft" />
         </Link>
       </aside>
     );
@@ -19,16 +19,18 @@ export const Sidebar = () => {
 
   return (
     <aside className="sidebar">
-      <h2>Painel do Administrador</h2>
-      <hr />
+      <NavLink to="/admin" className="painelLink" end>
+        Painel do Administrador
+      </NavLink>
       <nav>
-        <Link to="noticias">Notícias</Link>
-        <li>Projetos</li>
-        <li>Acervo</li>
         <hr />
-        <Link to="docentes-e-depoimentos">Docentes e Depoimentos</Link>
-        <li>Matriz Curricular</li>
-        <li>Consulta por Semestre</li>
+        <NavLink to="noticias">Notícias</NavLink>
+        <NavLink to="projetos">Projetos</NavLink>
+        <NavLink to="acervo">Acervo</NavLink>
+        <hr />
+        <NavLink to="docentes-e-depoimentos">Docentes e Depoimentos</NavLink>
+        <NavLink to="matriz-curricular">Matriz Curricular</NavLink>
+        <NavLink to="consulta-por-semestre">Consulta por Semestre</NavLink>
       </nav>
     </aside>
   );

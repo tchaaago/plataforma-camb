@@ -14,7 +14,7 @@
 }
 
 .depoimentos {
-  background-color: var(--verdesecundário);
+  background-color: var(--verdesecundario);
   color: var(--brancosoft);
   padding: 20px;
   border-radius: 8px;
@@ -24,7 +24,7 @@
 
 .depoimentos:hover {
   transform: scale(1.05);
-  background-color: var(--verdeterciário);
+  background-color: var(--verdeterciario);
 }
 
 .info {

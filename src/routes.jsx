@@ -8,9 +8,13 @@ import FaleConosco from "./paginas/Fale-Conosco";
 import Page404 from "./paginas/Page404";
 import PageBase from "./paginas/PaginaBase";
 import { Admin } from "./paginas/admin/Admin";
-import { Noticias } from "./paginas/admin/Noticias";
-import { DocentesDepoimentos } from "./paginas/admin/DocentesDepoimentos";
-import { RegistrarDocentesDepoimentos } from "./paginas/admin/RegistrarDocentesDepoimentos";
+import { Noticias } from "./paginas/admin/noticias/Noticias";
+import { DocentesDepoimentos } from "./paginas/admin/docentes-e-depoimentos/DocentesDepoimentos";
+import { RegistrarDocentesDepoimentos } from "./paginas/admin/docentes-e-depoimentos/registrarDocentesDepoimentos/RegistrarDocentesDepoimentos";
+import { Projetos } from "./paginas/admin/projetos/Projetos";
+import { Acervo } from "./paginas/admin/acervo/Acervo";
+import { MatrizCurricular } from "./paginas/admin/matriz-curricular/MatrizCurricular";
+import { ConsultaPorSemestre } from "./paginas/admin/consulta-por-semestre/ConsultaPorSemestre";
 
 function AppRoutes() {
   return (
@@ -27,6 +31,8 @@ function AppRoutes() {
         </Route>
         <Route path="/admin" element={<Admin />}>
           <Route path="noticias" element={<Noticias />}></Route>
+          <Route path="projetos" element={<Projetos />}></Route>
+          <Route path="acervo" element={<Acervo />}></Route>
           <Route path="docentes-e-depoimentos">
             <Route index element={<DocentesDepoimentos />}></Route>
             <Route
@@ -34,6 +40,14 @@ function AppRoutes() {
               element={<RegistrarDocentesDepoimentos />}
             ></Route>
           </Route>
+          <Route
+            path="matriz-curricular"
+            element={<MatrizCurricular />}
+          ></Route>
+          <Route
+            path="consulta-por-semestre"
+            element={<ConsultaPorSemestre />}
+          ></Route>
         </Route>
       </Routes>
     </BrowserRouter>

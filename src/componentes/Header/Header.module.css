@@ -1,7 +1,7 @@
 .header {
     width: 100%;
     height: 70px;
-    background-color: var(--verdesecundário);
+    background-color: var(--verdesecundario);
     color: var(--brancosoft);
 
     display: flex;
@@ -24,6 +24,6 @@
 
 .header a:hover {
     color: var(--laranja);
-    background-color: var(--verdeterciário);
+    background-color: var(--verdeterciario);
     transition: 0.5s;
 }

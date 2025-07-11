@@ -6,37 +6,58 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 20rem;
+  max-width: 35rem;
   background-color: #17210D;
   color: white;
-  padding: 2rem 1rem;
-  gap: 25px;
-
+  padding: 2rem;
 }
 
 .sidebar-alt {
   text-align: center;
   top: 0;
   left: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
-  width: 5rem;
+  width: 100%;
+  max-width: 8rem;
   background-color: #17210D;
   color: white;
-  padding: 2rem 1rem;
-  gap: 25px;
+  padding: 2rem;
 }
 
-.sidebar h2 {
-  font-size: 18px;
+.arrowLeft {
+  color: white;
+  
+}
+
+.painelLink {
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .sidebar nav {
+  padding-top: 2rem;
   list-style: none;
-  padding: 10px;
+  text-decoration: none;
+  display: inherit;
+  flex-direction: inherit;
+  gap: 2rem;
 }
 
-.sidebar a {
-    padding-bottom: 50px;
+.sidebar a,
+.sidebar .painelLink {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.sidebar a:hover,
+.sidebar .painelLink:hover,
+.sidebar a.active {
+  background-color: white;
+  color: black;
+}

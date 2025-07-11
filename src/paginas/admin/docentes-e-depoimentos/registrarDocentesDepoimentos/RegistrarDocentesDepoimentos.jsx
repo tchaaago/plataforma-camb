@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { DocentesForm } from "./components/docentesForm/DocentesForm";
-import { DepoimentosForm } from "./components/depoimentosForm/DepoimentosForm";
+import { DocentesForm } from "../../components/docentesForm/DocentesForm";
+import { DepoimentosForm } from "../../components/depoimentosForm/DepoimentosForm";
+import "./style.css";
 
 export const RegistrarDocentesDepoimentos = () => {
   const [selectedForm, setSelectedForm] = useState("docentes");
@@ -10,8 +11,8 @@ export const RegistrarDocentesDepoimentos = () => {
       <main>
         <h1>Registrar Material</h1>
 
-        <div style={{ marginBottom: "2rem" }}>
-          <label>
+        <div>
+          <label className="inputCircle">
             <input
               type="radio"
               name="tipo"
@@ -22,7 +23,7 @@ export const RegistrarDocentesDepoimentos = () => {
             Docentes
           </label>
 
-          <label style={{ marginLeft: "2rem" }}>
+          <label className="inputCircle">
             <input
               type="radio"
               name="tipo"

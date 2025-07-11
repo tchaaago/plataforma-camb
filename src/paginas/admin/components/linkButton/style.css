@@ -1,0 +1,16 @@
+.linkButton {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--verdesecundario);
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  padding-right: 2rem;
+  text-decoration: none;
+}
+
+.linkButton:hover {
+  background-color: var(--verdeterciario);
+  transition: 0.5s;
+}

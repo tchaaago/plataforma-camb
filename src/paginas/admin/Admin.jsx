@@ -1,8 +1,7 @@
 import { Outlet } from "react-router-dom";
-import Footer from "../../componentes/Footer";
 import { Sidebar } from "./components/sidebar/Sidebar";
 import { Header } from "./components/header/Header";
-import { FileX } from "lucide-react";
+import "./style.css";
 
 export const Admin = () => {
   return (
@@ -10,7 +9,7 @@ export const Admin = () => {
       style={{
         display: "flex",
         flexDirection: "column",
-        backgroundImage: "url('/assets/grafismo_bg.svg')",
+        backgroundImage: "url('/assets/grafismo-fundo.svg')",
         backgroundPosition: "right top",
         backgroundRepeat: "no-repeat",
         minHeight: "100dvh",
@@ -21,7 +20,6 @@ export const Admin = () => {
         <Sidebar />
         <Outlet />
       </main>
-      {/* <Footer /> */}
     </div>
   );
 };
