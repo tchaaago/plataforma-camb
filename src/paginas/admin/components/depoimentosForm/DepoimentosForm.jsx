@@ -10,6 +10,9 @@ export const DepoimentosForm = () => {
     tagline: "",
   });
 
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+
   const handleInputChange = (e) => {
     const { id, value } = e.currentTarget;
     setFormData((prevState) => ({
@@ -20,7 +23,18 @@ export const DepoimentosForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const { name, description, tagline } = formData;
+    if (!name || !description || !tagline) {
+      setError("Por favor, preencha todos os campos.");
+      setSuccess("");
+      return;
+    }
+
     try {
+      setError("");
+      setSuccess("Depoimento registrado com sucesso!");
+
       const id = await DepoimentosService.create(
         {
           name: formData.name,
@@ -30,13 +44,23 @@ export const DepoimentosForm = () => {
         formData.image
       );
       console.log("Depoimento registrado com sucesso:", id);
+
+      setFormData({
+        name: "",
+        description: "",
+        tagline: "",
+      });
     } catch (err) {
       console.error("Erro ao registrar depoimento:", err);
+      setError("Erro ao registrar depoimento. Tente novamente.");
     }
   };
 
   return (
     <form onSubmit={handleSubmit}>
+      {error && <p className="erro">{error}</p>}
+      {success && <p className="success">{success}</p>}
+
       <InputText
         id="name"
         placeholder="Nome"
