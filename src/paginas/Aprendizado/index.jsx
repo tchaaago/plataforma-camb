@@ -124,8 +124,10 @@ function Aprendizado() {
           onNavegar={handleNavigate}
         />
       )}
-
-      <div>
+      <figure className={styles.pattern}>
+        <img src="./assets/pattern.svg" alt="pattern" />
+      </figure>
+      <div className={styles.metodologias}>
         <h1>Metodologias de Ensino</h1>
         <span>
           O curso de Ciências Ambientais adota uma abordagem pedagógica

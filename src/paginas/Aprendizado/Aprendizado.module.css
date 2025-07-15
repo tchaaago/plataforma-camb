@@ -7,7 +7,7 @@
 .introducao {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   padding: 5rem 2rem;
   gap: 3.5rem;
   width: 100%;
@@ -162,4 +162,30 @@
   color: var(--brancosoft);
   border: none;
   transition: 1s;
+}
+
+.pattern {
+  width: 100%;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  padding-left: 35rem;
+  padding-right: 35rem;
+}
+
+.metodologias {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem 35rem;
+  gap: 3.5rem;
+  width: 100%;
+}
+
+.metodologias h1 {
+  font-size: 40px;
+}
+.metodologias span {
+  font-size: 16px;
+  text-align: justify;
+  padding-bottom: 5rem;
 }
