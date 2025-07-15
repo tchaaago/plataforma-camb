@@ -1,6 +1,26 @@
 .board {
+  background-color: var(--begeprimario);
+  border-radius: 10px;
   margin: 5rem;
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
+  padding: 2rem;
+
+}
+
+.board h1 {
+  margin-bottom: 3rem;
+}
+
+.board ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+    overflow-y: auto;
+}
+
+.registerButton {
+  margin-left: auto;
+  margin-top: auto;
 }

@@ -1,39 +1,26 @@
 import { useState } from "react";
 import { DocentesForm } from "../../components/docentesForm/DocentesForm";
 import { DepoimentosForm } from "../../components/depoimentosForm/DepoimentosForm";
+import { Toggle } from "../../components/toggle/toggle";
 import "./style.css";
 
 export const RegistrarDocentesDepoimentos = () => {
   const [selectedForm, setSelectedForm] = useState("docentes");
+  const options = [
+    { label: "Docentes", value: "docentes" },
+    { label: "Depoimentos", value: "depoimentos" },
+  ];
 
   return (
     <div>
       <main>
         <h1>Registrar Material</h1>
 
-        <div>
-          <label className="inputCircle">
-            <input
-              type="radio"
-              name="tipo"
-              value="docentes"
-              checked={selectedForm === "docentes"}
-              onChange={() => setSelectedForm("docentes")}
-            />
-            Docentes
-          </label>
-
-          <label className="inputCircle">
-            <input
-              type="radio"
-              name="tipo"
-              value="depoimentos"
-              checked={selectedForm === "depoimentos"}
-              onChange={() => setSelectedForm("depoimentos")}
-            />
-            Depoimentos
-          </label>
-        </div>
+        <Toggle
+          options={options}
+          selected={selectedForm}
+          onChange={setSelectedForm}
+        />
 
         {selectedForm === "docentes" ? <DocentesForm /> : <DepoimentosForm />}
       </main>

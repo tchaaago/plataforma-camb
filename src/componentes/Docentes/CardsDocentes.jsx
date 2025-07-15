@@ -18,8 +18,6 @@ function DocentesCAMB() {
     fetchDocentes();
   }, []);
 
-  console.log(data);
-
   if (!data || !data.length) return null;
 
   return (

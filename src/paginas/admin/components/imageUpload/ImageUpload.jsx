@@ -1,7 +1,7 @@
-import { useRef, useState } from "react";
+import { useImperativeHandle, forwardRef, useRef, useState } from "react";
 import "./style.css";
 
-export const ImageUpload = ({ id, label, onImageChange }) => {
+export const ImageUpload = forwardRef(({ id, label, onImageChange }, ref) => {
   const [preview, setPreview] = useState(null);
   const fileInputRef = useRef();
 
@@ -32,6 +32,13 @@ export const ImageUpload = ({ id, label, onImageChange }) => {
     fileInputRef.current.value = null;
     onImageChange(null);
   };
+
+  // Expor função reset ao componente pai
+  useImperativeHandle(ref, () => ({
+    reset() {
+      handleRemove();
+    },
+  }));
 
   return (
     <div className="image-upload-wrapper">
@@ -64,4 +71,4 @@ export const ImageUpload = ({ id, label, onImageChange }) => {
       )}
     </div>
   );
-};
+});

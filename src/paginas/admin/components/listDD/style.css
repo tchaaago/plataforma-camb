@@ -1,0 +1,26 @@
+.containerLi {
+  display: flex;
+  gap: 2rem;
+}
+
+.containerImg {
+  width: 100%;
+  max-width: 8rem;
+}
+
+.imgDocenteList {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.containerDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerDetails2 {
+  margin-top: auto;
+}

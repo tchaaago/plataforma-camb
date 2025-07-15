@@ -16,7 +16,13 @@ export const Admin = () => {
       }}
     >
       <Header />
-      <main style={{ display: "flex", flexGrow: "1" }}>
+      <main
+        style={{
+          display: "flex",
+          flexGrow: "1",
+          maxHeight: "calc(100dvh - 7rem)",
+        }}
+      >
         <Sidebar />
         <Outlet />
       </main>

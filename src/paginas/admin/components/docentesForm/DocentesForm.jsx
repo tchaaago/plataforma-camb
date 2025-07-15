@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { DocenteService } from "../../../../services/docente-service";
 import { ImageUpload } from "../imageUpload/ImageUpload";
 import { InputText } from "../inputText/inputText";
@@ -13,6 +13,7 @@ export const DocentesForm = () => {
 
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
+  const imageUploadRef = useRef();
 
   const handleInputChange = (e) => {
     const { id, value } = e.currentTarget;
@@ -53,6 +54,7 @@ export const DocentesForm = () => {
         lattes: "",
         image: null,
       });
+      imageUploadRef.current?.reset();
     } catch (err) {
       console.error("Erro ao registrar docente:", err);
       setError("Erro ao registrar docente. Tente novamente.");
@@ -64,7 +66,7 @@ export const DocentesForm = () => {
       {error && <p className="erro">{error}</p>}
       {success && <p className="success">{success}</p>}
 
-      <ImageUpload onImageChange={handleImageChange} />
+      <ImageUpload ref={imageUploadRef} onImageChange={handleImageChange} />
       <InputText
         id="name"
         placeholder="Nome do docente"

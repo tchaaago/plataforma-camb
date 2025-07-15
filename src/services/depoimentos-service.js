@@ -1,5 +1,7 @@
-import { collection, addDoc, Timestamp, getDocs } from "firebase/firestore";
+import { collection, addDoc, Timestamp, getDocs, deleteDoc, doc } from "firebase/firestore";
 import { db } from "../firebase/config";
+import { format } from "date-fns";
+import { ptBR } from "date-fns/locale";
 
 const DEPOIMENTOS_COLLECTION = "depoimentos";
 
@@ -12,10 +14,10 @@ export const DepoimentosService = {
   async create(depoimento) {
     try {
       // Monta dados para salvar, inclui imageUrl se existir
-      const dataToSave = {
-        ...depoimento,
-        createdAt: Timestamp.now(),
-      };
+    const dataToSave = {
+      ...depoimento,
+      createdAt: format(new Date(), "dd/MM/yyyy", { locale: ptBR }),
+    };
 
       const docRef = await addDoc(collection(db, DEPOIMENTOS_COLLECTION), dataToSave);
 
@@ -41,4 +43,18 @@ async findAll() {
       throw error;
     }
   },
+
+    /**
+     * Deleta um depoimento pelo ID.
+     * @param {string} id - ID do documento no Firestore.
+     */
+    async deleteById(id) {
+      try {
+        await deleteDoc(doc(db, DEPOIMENTOS_COLLECTION, id));
+  
+      } catch (error) {
+        console.error("Erro ao deletar depoimento:", error);
+        throw error;
+      }
+    },
 };
