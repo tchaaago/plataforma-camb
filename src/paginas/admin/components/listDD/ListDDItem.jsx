@@ -20,8 +20,10 @@ export const ListDDItem = ({
         {tagline && <span>{tagline}</span>}
         <p>{description}</p>
         <div className="containerDetails2">
-          <span>{date}</span>
-          <button onClick={onDelete}>Excluir</button>
+          <span>Publicado em: {date}</span>
+          <button onClick={onDelete} className="deleteButton">
+            Excluir
+          </button>
         </div>
       </div>
     </li>

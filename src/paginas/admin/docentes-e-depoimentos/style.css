@@ -1,7 +1,7 @@
 .board {
   background-color: var(--begeprimario);
   border-radius: 10px;
-  margin: 5rem;
+  margin: 4rem;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -10,10 +10,11 @@
 }
 
 .board h1 {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .board ul {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;

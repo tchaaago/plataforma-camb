@@ -12,15 +12,17 @@ export const RegistrarDocentesDepoimentos = () => {
   ];
 
   return (
-    <div>
+    <div className="board">
       <main>
         <h1>Registrar Material</h1>
 
-        <Toggle
-          options={options}
-          selected={selectedForm}
-          onChange={setSelectedForm}
-        />
+        <div className="toggleContainer">
+          <Toggle
+            options={options}
+            selected={selectedForm}
+            onChange={setSelectedForm}
+          />
+        </div>
 
         {selectedForm === "docentes" ? <DocentesForm /> : <DepoimentosForm />}
       </main>

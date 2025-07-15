@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { DocenteService } from "../../../../services/docente-service";
 import { ImageUpload } from "../imageUpload/ImageUpload";
 import { InputText } from "../inputText/inputText";
+import "./style.css";
 
 export const DocentesForm = () => {
   const [formData, setFormData] = useState({
@@ -86,7 +87,9 @@ export const DocentesForm = () => {
         onChange={handleInputChange}
       />
 
-      <button type="submit">Registrar</button>
+      <button type="submit" className="registerButton">
+        Registrar
+      </button>
     </form>
   );
 };

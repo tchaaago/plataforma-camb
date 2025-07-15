@@ -1,9 +1,3 @@
-.inputCircle {
-  display: flex;
-  flex-direction: row;
-  font-size: 1.8rem;
-}
-
-.inputCircle input{
-  cursor: pointer;
+.toggleContainer {
+  margin-bottom: 1rem;
 }

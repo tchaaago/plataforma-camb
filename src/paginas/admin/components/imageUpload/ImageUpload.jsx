@@ -33,7 +33,6 @@ export const ImageUpload = forwardRef(({ id, label, onImageChange }, ref) => {
     onImageChange(null);
   };
 
-  // Expor função reset ao componente pai
   useImperativeHandle(ref, () => ({
     reset() {
       handleRemove();

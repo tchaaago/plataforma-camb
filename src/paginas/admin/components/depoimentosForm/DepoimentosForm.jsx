@@ -80,7 +80,9 @@ export const DepoimentosForm = () => {
         value={formData.tagline}
         onChange={handleInputChange}
       />
-      <button type="submit">Registrar</button>
+      <button type="submit" className="registerButton">
+        Registrar
+      </button>
     </form>
   );
 };

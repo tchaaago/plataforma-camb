@@ -3,6 +3,18 @@
   gap: 2rem;
 }
 
+.deleteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  color: blue;
+  text-decoration: underline;
+
+}
+
 .containerImg {
   width: 100%;
   max-width: 8rem;
@@ -22,5 +34,8 @@
 }
 
 .containerDetails2 {
+  display: flex;
+  gap: 5rem;
   margin-top: auto;
+  color: gray;
 }

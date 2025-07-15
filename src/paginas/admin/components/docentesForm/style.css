@@ -1,0 +1,11 @@
+.registerButton {
+  background-color: var(--verdeprimario);
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-family: inherit;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
