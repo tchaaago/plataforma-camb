@@ -4,7 +4,7 @@ import { ListDDItem } from "../components/listDD/ListDDItem";
 import { useEffect, useState } from "react";
 import { DocenteService } from "../../../services/docente-service";
 import { DepoimentosService } from "../../../services/depoimentos-service";
-import { Toggle } from "../components/toggle/toggle";
+import { Toggle } from "../components/toggle/Toggle";
 import "./style.css";
 
 export const DocentesDepoimentos = () => {
