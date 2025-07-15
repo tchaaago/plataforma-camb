@@ -38,26 +38,30 @@ function Aprendizado() {
         <div className={styles.card}>
           <article className={styles.cardTexto}>
             <h2>
-            Conheça como se dá o processo de formação em Ciências Ambientais: da
-            teoria à prática, da sala de aula ao campo.
-          </h2>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem.
-          </p>
+              Conheça como se dá o processo de formação em Ciências Ambientais:
+              da teoria à prática, da sala de aula ao campo.
+            </h2>
+            <p>
+              A formação em Ciências Ambientais é pensada para integrar
+              diferentes áreas do conhecimento e aproximar os estudantes da
+              realidade social e ambiental do país. Desde os primeiros
+              semestres, os alunos têm contato com conteúdos teóricos e
+              metodológicos que ajudam a compreender os sistemas naturais, os
+              impactos humanos e as alternativas para uma convivência mais
+              sustentável. Além das aulas em sala, o curso valoriza experiências
+              práticas, como saídas de campo, atividades em laboratório,
+              participação em projetos de pesquisa e ações de extensão junto à
+              comunidade. Essa combinação fortalece o aprendizado, estimula o
+              pensamento crítico e prepara os futuros profissionais para atuar
+              com responsabilidade, criatividade e compromisso com a
+              transformação socioambiental.
+            </p>
           </article>
           <img
-              className={styles.imgAp4}
-              src="/assets/imgAp4.png"
-              alt="banner"
-            ></img>
+            className={styles.imgAp4}
+            src="/assets/imgAp4.png"
+            alt="banner"
+          ></img>
         </div>
       </div>
       <div className={styles.matriz}>

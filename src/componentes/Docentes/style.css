@@ -57,7 +57,7 @@
 .lattes {
   display: inline-block;
   align-self: flex-start;
-  margin: 20px 10px 10px 10px; 
+  margin: 20px 10px; 
   padding: 6px 12px;
   border-radius: 5px;
   background-color: #007bff;

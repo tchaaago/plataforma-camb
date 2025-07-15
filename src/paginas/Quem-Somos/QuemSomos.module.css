@@ -2,15 +2,20 @@ body {
     background-color: var(--brancosoft);
 }
 
+.imgHead img {
+    width: 100%;
+}
 .sobre {
     width: 100%;
     padding: 40px 240px;
+    margin: 4rem;
     background-color: var(--brancosoft);
 }
 
 .sobre h2 {
     font-size: 40px;
     padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .sobre p {
