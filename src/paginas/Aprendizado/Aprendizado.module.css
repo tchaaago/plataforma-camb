@@ -4,6 +4,64 @@
   box-sizing: border-box;
 }
 
+.introducao {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 5rem 2rem;
+  gap: 3.5rem;
+  width: 100%;
+}
+
+.titulo {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.titulo h1 {
+  font-size: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--verdesecundario);
+  border-radius: 1rem;
+  padding: 3rem 4rem;
+  gap: 2rem;
+  max-width: 1200px;
+}
+
+.cardTexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--brancosoft);
+  padding-right: 2rem;
+}
+
+.cardTexto h2 {
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+.cardTexto p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.imgAp4 {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
 .matriz {
   width: 100%;
   height: 100%;
@@ -12,7 +70,7 @@
 }
 
 .apresentacao h1 {
-  font-size: 48px;
+  font-size: 40px;
   color: var(--verdeterciario);
 }
 
@@ -31,14 +89,13 @@
 }
 
 .corpoMatriz {
- width: 500px;
+  width: 500px;
   height: 600px;
   border-radius: 10px;
   background-color: var(--brancosoft);
   display: flex;
   gap: 8rem;
 }
-
 
 .linkMatriz {
   margin: 40px;
@@ -49,7 +106,7 @@
 }
 
 .linkMatriz a {
- width: 90px;
+  width: 90px;
   height: 30px;
   text-align: center;
   text-decoration: none;
@@ -66,9 +123,8 @@
   flex-direction: column;
   gap: 1rem;
   border-radius: 10px;
-  padding: 20px; 
+  padding: 20px;
 }
-
 
 .botoes {
   display: grid;
@@ -77,7 +133,7 @@
 }
 
 .botaoSemestre {
-  font-family: "Atkinson Hyperlegible", monospace;;
+  font-family: "Atkinson Hyperlegible", monospace;
   font-size: 20px;
   font-weight: bold;
   text-align: center;

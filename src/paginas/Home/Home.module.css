@@ -13,11 +13,24 @@
 }
 
 .hero {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  position: relative;
+  height: 62vh;
+  overflow: hidden;
+}
+
+.heroImageWrapper {
+  position: absolute;
+  top: -300px;
+  right: 0;
+  width: 800px;
+  z-index: 0;
+}
+
+.imgHero {
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  opacity: 1;
 }
 
 .heroTexto {
@@ -26,24 +39,22 @@
   margin: 5rem;
   padding: 5rem;
   padding-left: 14rem;
-  width: 40%;
+  width: 45%;
 }
 
 .hero h1 {
-  font-size: 4rem;
-  font-weight: bold;
-  line-height: 1;
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 5px;
 }
 
 .hero span {
   font-size: 16px;
   font-weight: lighter;
   padding-top: 1rem;
-}
-
-.imgHero {
-  position: relative;
-  pointer-events: none;
+  line-height: 150%;
+  width: 90%;
 }
 
 .homeNoticias {

@@ -16,11 +16,13 @@ function Home() {
           </span>
         </article>
         <figure>
-          <img
-            className={styles.imgHero}
-            src="./assets/grafismo-home.svg"
-            alt="Imagem de Home"
-          />
+          <div className={styles.heroImageWrapper}>
+            <img
+              className={styles.imgHero}
+              src="./assets/grafismo-home.svg"
+              alt="Imagem de Home"
+            />
+          </div>
         </figure>
       </div>
       <div className={styles.homeNoticias}>
