@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { DocentesForm } from "../../components/docentesForm/DocentesForm";
 import { DepoimentosForm } from "../../components/depoimentosForm/DepoimentosForm";
-import { Toggle } from "../../components/toggle/toggle";
+import { Toggle } from "../../components/toggle/Toggle";
 import "./style.css";
 
 export const RegistrarDocentesDepoimentos = () => {
