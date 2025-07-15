@@ -22,7 +22,7 @@ function QuemSomos() {
           ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
           ea voluptate velit esse quam nihil molestiae consequatur, vel illum
           qui dolorem eum fugiat quo voluptas nulla pariatur?
-        </p>{" "}
+        </p>
         <br />
         <h2>O que fazemos</h2>
         <p>
@@ -39,7 +39,7 @@ function QuemSomos() {
           ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
           ea voluptate velit esse quam nihil molestiae consequatur, vel illum
           qui dolorem eum fugiat quo voluptas nulla pariatur?
-        </p>{" "}
+        </p>
         <br />
         <figure className={styles.img}>
           <img

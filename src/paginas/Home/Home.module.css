@@ -1,62 +1,94 @@
-/* css da page home */
-
-body {
-    background-color: var(--brancosoft);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .home {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 100px 225px;
-    overflow: hidden; /* sobrepoe a navbar e esconde o grafismo */
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  background-color: var(--brancosoft);
 }
 
-.home p {
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 1;
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-.home span {
-    font-size: 18px;
-    font-weight: lighter;
+.heroTexto {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem;
+  padding: 5rem;
+  padding-left: 14rem;
+  width: 40%;
 }
 
-.home img {
-    height: 1200px;
-    position: relative;
-    top: -850px; /* move a imagem para cima um pouco para fora da tela */
-    right: -520px;  /* move a imagem para a direita um pouco para fora da tela */
-    pointer-events: none;
+.hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.hero span {
+  font-size: 16px;
+  font-weight: lighter;
+  padding-top: 1rem;
+}
+
+.imgHero {
+  position: relative;
+  pointer-events: none;
 }
 
 .homeNoticias {
-    color: var(--brancosoft );
-    background-color: var(--verdesecundario);
-    display: flex;
-    align-items:flex-start;
-    justify-content:flex-start;
-    width: 100%;
-    height: 727px;
-    position: relative;
-    top: -700px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 727px;
+  background-color: var(--verdesecundario);
+  padding: 5rem;
 }
 
 .homeNoticias h1 {
-    font-size: 40px;
-    padding: 40px 225px;
+  font-size: 40px;
+  color: var(--brancosoft);
+  padding-left: 14rem;
 }
 
-.homeParagrafo {
-    width: 100%;
-    background-color: var(--brancosoft);
-    display: flex;
-    flex-direction: column;
-    padding: 100px 225px;
+.homeApresentacao {
+  width: 100%;
+  background-color: var(--brancosoft);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+  gap: 4rem;
 }
 
-.homeParagrafo p {
-    font-size: 24px;
+.homeApresentacao p {
+  font-size: 24px;
+  width: 100%;
+  padding-top: 5rem;
+  padding-left: 14rem;
+  padding-right: 14rem;
+  text-align: justify;
+}
+
+.grafFolha {
+  width: 100%;
+  padding-left: 14rem;
+  padding-right: 14rem;
+}
+
+.homeApresentacao h1 {
+  padding-top: 3rem;
+  font-size: 40px;
+  padding-left: 14rem;
 }
