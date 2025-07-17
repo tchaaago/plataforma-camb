@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 import "./style.css";
 import { DocenteService } from "../../services/docente-service";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/free-mode";
+import { Autoplay, FreeMode } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 function DocentesCAMB() {
   const [data, setData] = useState([]);
@@ -9,6 +14,7 @@ function DocentesCAMB() {
     const fetchDocentes = async () => {
       try {
         const data = await DocenteService.findAll();
+
         setData(data);
       } catch (err) {
         console.error("Erro ao carregar docentes:", err);
@@ -21,31 +27,49 @@ function DocentesCAMB() {
   if (!data || !data.length) return null;
 
   return (
-    <>
-      <div className="carrossel">
-        {data.map((docente) => {
-          const { id, name, degree, imageUrl, lattes } = docente;
-          console.log(degree);
-          return (
-            <div className="docentes" key={id}>
+   <Swiper
+      spaceBetween={20} 
+      slidesPerView={"auto"}
+      grabCursor={true}
+      loop={true}
+      freeMode={true}
+      speed={5000}
+      autoplay={{
+        delay: 0,
+        disableOnInteraction: false,
+        reverseDirection: false,
+      }}
+      modules={[Autoplay, FreeMode]}
+    >
+      {data.map((docente) => {
+        const { id, name, degree, imageUrl, lattes } = docente;
+
+        return (
+          <SwiperSlide key={id} className="swiper-slide-custom">
+            <section className="docentes">
               <div className="container_image">
                 <img src={imageUrl} alt={name} />
               </div>
-
               <div className="info">
-                <span className="nome">{name}</span>
+                <h3 className="nome">{name}</h3>
                 <p className="infoDocente">{degree}</p>
                 <div className="lattes">
-                  <a href={lattes} target="_blank">
+                  <button
+                    onClick={() =>
+                      window.open(lattes, "_blank", "noopener,noreferrer")
+                    }
+                    className="lattes-button"
+                    type="button"
+                  >
                     Currículo Lattes
-                  </a>
+                  </button>
                 </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
-    </>
+            </section>
+          </SwiperSlide>
+        );
+      })}
+    </Swiper>
   );
 }
 

@@ -1,17 +1,26 @@
-.carrossel {
+.swiper {
+  padding: 2rem;
   width: 100%;
+}
+
+.swiper-slide-custom {
+  width: 52rem !important;
   display: flex;
-  background-color: var(--brancosoft);;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-  gap: 5rem;
+  justify-content: center;
+}
+
+.swiper-wrapper {
+  scrollbar-width: none;
+}
+.swiper-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .docentes {
   display: flex;
   flex: none;
-  width: 55rem;
+  border-radius: 5px;
+  width: 50rem;
   gap: 10px;
   background-color: var(--verdesecundario);
   color: var(--brancosoft);
@@ -38,7 +47,7 @@
   flex: 1;
 }
 
- .info span {
+ .info h3 {
   font-size: 20px;
   font-weight: bolder;
   display: block;
@@ -55,19 +64,25 @@
 }
 
 .lattes {
-  display: inline-block;
-  align-self: flex-start;
-  margin: 20px 10px; 
-  padding: 6px 12px;
-  border-radius: 5px;
-  background-color: #007bff;
-  font-size: 14px;
-  text-decoration: none;
+  width: fit-content;
+  margin: 20px 10px;
   margin-top: auto;
 }
 
-.lattes a {
+.lattes-button {
+  background-color: var(--begeprimario); 
+  color: var(--verdeterciario);
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
   text-decoration: none;
-  color: var(--brancosoft);
-
+  display: inline-block;
+  transition: 0.3s ease;
 }
+
+.lattes-button:hover {
+  background-color: var(--begesecundario);
+}
+
