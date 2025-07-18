@@ -7,6 +7,7 @@
   width: 52rem !important;
   display: flex;
   justify-content: center;
+
 }
 
 .swiper-wrapper {
@@ -20,7 +21,7 @@
   display: flex;
   flex: none;
   border-radius: 5px;
-  width: 50rem;
+  width: 60rem;
   gap: 10px;
   background-color: var(--verdesecundario);
   color: var(--brancosoft);

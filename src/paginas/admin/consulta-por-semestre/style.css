@@ -1,0 +1,27 @@
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.semesterButton {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: var(--verdeprimario);
+  color: white;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+.semesterButton:hover {
+  background-color: var(--verdesecundario);
+}
+
+.optativaButton {
+  grid-column: 1 / -1;
+}

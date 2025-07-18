@@ -27,15 +27,15 @@ function DocentesCAMB() {
   if (!data || !data.length) return null;
 
   return (
-   <Swiper
-      spaceBetween={20} 
+    <Swiper
+      spaceBetween={120}
       slidesPerView={"auto"}
       grabCursor={true}
       loop={true}
       freeMode={true}
       speed={5000}
       autoplay={{
-        delay: 0,
+        delay: 1000,
         disableOnInteraction: false,
         reverseDirection: false,
       }}

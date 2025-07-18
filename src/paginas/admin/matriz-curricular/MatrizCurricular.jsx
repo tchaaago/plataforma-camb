@@ -1,7 +1,3 @@
 export const MatrizCurricular = () => {
-  return (
-    <div>
-      <main>matriz</main>
-    </div>
-  );
+  return <div className="board"></div>;
 };

@@ -1,6 +1,6 @@
-export const Button = ({ color, icon, text }) => {
+export const Button = ({ icon, text, className, onClick, type }) => {
   return (
-    <button style={{ background: color }}>
+    <button type={type} onClick={onClick} className={className}>
       {icon}
       {text}
     </button>

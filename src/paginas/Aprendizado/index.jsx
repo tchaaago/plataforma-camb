@@ -1,14 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Aprendizado.module.css";
-import { dadosCurriculares } from "../../services/dados-currisculares";
 import { ModalSemestre } from "../../componentes/ModalSemestre";
+import { DisciplinasService } from "../../services/disciplinas-service";
+import { gerarDadosCurriculares } from "./utils/gerarDadosCurriculares";
 
 function Aprendizado() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const [dadosCurricularesData, setDadosCurricularesData] = useState([]);
   const [selectedIndex, setSelectedIndex] = useState(null);
-
-  const semestres = Object.keys(dadosCurriculares);
 
   const handleOpenModal = (index) => {
     setSelectedIndex(index);
@@ -21,13 +20,38 @@ function Aprendizado() {
   };
 
   const handleNavigate = (direction) => {
-    const totalItems = semestres.length;
+    const totalItems = dadosCurricularesData.length;
     const newIndex = (selectedIndex + direction + totalItems) % totalItems;
     setSelectedIndex(newIndex);
   };
-  const selectedSemesterName = semestres[selectedIndex];
-  const selectedSemesterData = dadosCurriculares[selectedSemesterName];
+  const selectedSemester = dadosCurricularesData[selectedIndex];
+  const selectedSemesterName = selectedSemester?.nome;
+  const selectedSemesterData = selectedSemester?.dados;
 
+  useEffect(() => {
+    async function fetchDisciplinas() {
+      try {
+        const dados = await DisciplinasService.findAll();
+        const dadosCurriculares = gerarDadosCurriculares(dados);
+
+        const dadosOrdenados = Object.entries(dadosCurriculares)
+          .map(([nome, dados]) => ({ nome, dados }))
+          .sort((a, b) => {
+            if (a.nome === "Optativas") return 1;
+            if (b.nome === "Optativas") return -1;
+            const numA = parseInt(a.nome);
+            const numB = parseInt(b.nome);
+            return numA - numB;
+          });
+
+        setDadosCurricularesData(dadosOrdenados);
+      } catch (error) {
+        console.error("Erro ao buscar disciplinas:", error);
+      }
+    }
+
+    fetchDisciplinas();
+  }, []);
   return (
     <>
       <div className={styles.introducao}>
@@ -102,13 +126,13 @@ function Aprendizado() {
 
           <section className={styles.consultaSemestre}>
             <div className={styles.botoes}>
-              {semestres.map((semestreNome, index) => (
+              {dadosCurricularesData.map((item, index) => (
                 <button
-                  key={semestreNome}
+                  key={item.nome}
                   className={styles.botaoSemestre}
                   onClick={() => handleOpenModal(index)}
                 >
-                  {semestreNome}
+                  {item.nome}
                 </button>
               ))}
             </div>
