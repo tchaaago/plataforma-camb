@@ -19,15 +19,15 @@ function QuemSomos() {
           valorizando a pesquisa, o ensino e a extensão. Aqui, mostramos o que
           fazemos, quem somos e como atuamos para construir um futuro mais justo
           e ambientalmente equilibrado.
-          <p>
-            Nosso curso reúne estudantes, professores, pesquisadores e
-            profissionais que acreditam na força da ciência como ferramenta de
-            transformação social. Atuamos de forma interdisciplinar, integrando
-            conhecimentos das ciências naturais, sociais e tecnológicas para
-            formar cidadãos críticos e preparados para enfrentar os desafios
-            socioambientais contemporâneos. A Plataforma CAMB é um reflexo desse
-            compromisso coletivo.
-          </p>
+        </p>
+        <p>
+          Nosso curso reúne estudantes, professores, pesquisadores e
+          profissionais que acreditam na força da ciência como ferramenta de
+          transformação social. Atuamos de forma interdisciplinar, integrando
+          conhecimentos das ciências naturais, sociais e tecnológicas para
+          formar cidadãos críticos e preparados para enfrentar os desafios
+          socioambientais contemporâneos. A Plataforma CAMB é um reflexo desse
+          compromisso coletivo.
         </p>
         <br />
         <h2>O que fazemos</h2>
@@ -108,9 +108,11 @@ function QuemSomos() {
         </div>
       </section>
       <section className={styles.depoimentos}>
-        <h2>Depoimentos</h2><br />
+        <h2>Depoimentos</h2>
+        <br />
       </section>
-      <CardsDepoimentos /><br />
+      <CardsDepoimentos />
+      <br />
     </>
   );
 }

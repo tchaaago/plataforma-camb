@@ -1,0 +1,39 @@
+body {
+    background-color: var(--brancosoft);
+}
+
+.imgHead img {
+    width: 100%;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 3rem 25rem;
+    margin: 2rem;
+}
+
+.apresentacao h1 {
+    font-size: 4rem;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 64rem;
+    line-height: 1.1;
+}
+
+.apresentacao p {
+    font-size: 1.6rem;
+    text-align: justify;
+    width: 65rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.apresentacao img {
+    border-radius: 1rem;
+}
+
+.slides {
+    padding-top: 5rem;
+}

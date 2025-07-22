@@ -1,0 +1,37 @@
+[
+  {
+    "titulo": "Licenciamento Ambiental",
+    "descricao": "Análise e condução de processos legais que autorizam atividades com base em seu impacto ambiental. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    "subtitulo": "Onde se atua:",
+    "texto": "Órgãos reguladores, secretarias de meio ambiente, empresas de engenharia ambiental.",
+    "imagem": "/assets/licenciamento.png"
+  },
+  {
+    "titulo": "Consultoria",
+    "descricao": "Elaboração de estudos e pareceres técnicos para clientes públicos ou privados, como relatórios de impacto ambiental. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+    "subtitulo": "Exemplos de serviços:",
+    "texto": "Consultoria para licenciamento, auditorias ambientais, diagnóstico de áreas degradadas.",
+    "imagem": "/assets/consultoria.png"
+  },
+  {
+    "titulo": "Gestão Ambiental",
+    "descricao": "Atuação em políticas e práticas que visam o uso sustentável dos recursos naturais em empresas, órgãos públicos e ONGs. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+    "subtitulo": "Exemplos de locais:",
+    "texto": "Prefeituras, IBAMA, empresas do setor energético, indústria, comitês de bacia.",
+    "imagem": "/assets/gestao-ambiental.png"
+  },
+  {
+    "titulo": "Pesquisa",
+    "descricao": "Investigação científica sobre temas ambientais, contribuindo para a produção de conhecimento e soluções sustentáveis. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+    "subtitulo": "Exemplo:",
+    "texto": "Universidades, institutos de pesquisa, ONGs científicas, laboratórios de ecologia, mudanças climáticas, etc.",
+    "imagem": "/assets/pesquisa.png"
+  },
+  {
+    "titulo": "Educação Ambiental",
+    "descricao": "Promoção da conscientização e do engajamento da sociedade em práticas sustentáveis por meio da educação formal e não formal. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    "subtitulo": "Onde se aplica:",
+    "texto": "Escolas, projetos sociais, ONGs, parques, secretarias de educação, museus de ciência.",
+    "imagem": "/assets/educacao-ambiental.png"
+  }
+]
