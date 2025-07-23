@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 4rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: calc(100vh - 80px);
+}
+
+.textSection {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+  z-index: 1;
+}
+
+.textSection h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.textSection p {
+  font-size: 1.6rem;
+  color: var(--preto);
+}
+
+.formSection {
+  flex: 1;
+  max-width: 560px;
+  height: 480px;
+  z-index: 1;
+}
+
+.form {
+  background-color: var(--verdeterciario);
+  padding: 2.5rem;
+  border-radius: 15px;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.inputField label {
+  color: var(--brancosoft);
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+}
+
+.inputField input,
+.inputField textarea {
+  width: 100%;
+  height: 4rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+}
+
+.inputField textarea {
+  height: 200px;
+  resize: none;
+}
+
+.inputField input:focus,
+.inputField textarea:focus {
+  outline: 2px solid var(--laranja);
+  outline-offset: 1px;
+}
+
+.submitButton {
+  width: 10rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block;
+  margin: 1.5rem auto 0;
+}
+
+.submitButton:hover {
+  background-color: var(--laranja);
+  color: white;
+  transform: scale(1.02);
+}
