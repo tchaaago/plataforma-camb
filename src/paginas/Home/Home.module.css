@@ -14,9 +14,10 @@
 
 .hero {
   position: relative;
-  height: 62vh;
-  overflow: hidden;
+  min-height: 62vh;
+  overflow: visible;
 }
+
 
 .heroImageWrapper {
   position: absolute;
@@ -61,16 +62,17 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  flex-direction: column;
   width: 100%;
-  height: 727px;
   background-color: var(--verdesecundario);
-  padding: 5rem;
 }
 
 .homeNoticias h1 {
   font-size: 40px;
   color: var(--brancosoft);
-  padding-left: 14rem;
+  margin-left: 19rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .homeApresentacao {
@@ -84,7 +86,7 @@
 }
 
 .homeApresentacao p {
-  font-size: 24px;
+  font-size: 20px;
   width: 100%;
   padding-top: 5rem;
   padding-left: 14rem;
@@ -93,6 +95,7 @@
 }
 
 .grafFolha {
+  margin-top: 4rem;
   width: 100%;
   padding-left: 14rem;
   padding-right: 14rem;
@@ -101,5 +104,10 @@
 .homeApresentacao h1 {
   padding-top: 3rem;
   font-size: 40px;
+  padding-left: 14rem;
+}
+
+.homeApresentacao span {
+  font-size: 20px;
   padding-left: 14rem;
 }

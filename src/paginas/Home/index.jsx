@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
+import { SlidesNoticias } from "../../componentes/Noticias/noticiasSlider";
 
 function Home() {
   return (
@@ -27,6 +28,7 @@ function Home() {
       </div>
       <div className={styles.homeNoticias}>
         <h1>Notícias</h1>
+        <SlidesNoticias />
       </div>
       <section className={styles.homeApresentacao}>
         <article>

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "titulo": "Nova política ambiental é aprovada",
+    "texto": "A nova política ambiental traz avanços significativos para a conservação da biodiversidade e o uso sustentável dos recursos naturais no Brasil.",
+    "imagem": "/assets/patos.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Pesquisadores desenvolvem tecnologia limpa",
+    "texto": "Pesquisadores da Universidade Federal desenvolveram uma tecnologia que reduz em 40% a emissão de gases do efeito estufa em áreas urbanas.",
+    "imagem": "/assets/patos2.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "Evento discute futuro sustentável",
+    "texto": "O Fórum Nacional de Sustentabilidade reuniu especialistas e autoridades para debater estratégias de desenvolvimento ecológico no Brasil.",
+    "imagem": "/assets/patos.jpg"
+  },
+  {
+    "id": 4,
+    "titulo": "Estudantes criam projeto de reflorestamento",
+    "texto": "Alunos de Ciências Ambientais da UFC lançam projeto de reflorestamento em áreas degradadas da Caatinga, envolvendo escolas e comunidades locais.",
+    "imagem": "/assets/patos2.jpg"
+  }
+]

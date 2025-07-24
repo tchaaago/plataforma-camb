@@ -148,8 +148,8 @@
 }
 
 .botaoSemestre-optativa {
-  grid-column: 1 / span 2; /* ocupa as 2 colunas */
-  width: 100%; /* ocupa 100% da célula expandida */
+  grid-column: 1 / span 2;
+  width: 100%;
   padding-top: 10px;
 }
 
