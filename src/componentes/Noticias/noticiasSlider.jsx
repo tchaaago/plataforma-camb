@@ -1,13 +1,16 @@
 import "./style.css";
 import noticias from "./dadosNoticias.json";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export const SlidesNoticias = () => {
   const [indexAtual, setIndexAtual] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const intervaloRef = useRef(null);
 
-  useEffect(() => {
-    const intervalo = setInterval(() => {
+  const iniciarIntervalo = () => {
+    clearInterval(intervaloRef.current);
+
+    intervaloRef.current = setInterval(() => {
       setIsTransitioning(true);
 
       setTimeout(() => {
@@ -16,9 +19,12 @@ export const SlidesNoticias = () => {
         );
         setIsTransitioning(false);
       }, 200);
-    }, 8000);
+    }, 6000);
+  };
 
-    return () => clearInterval(intervalo);
+  useEffect(() => {
+    iniciarIntervalo();
+    return () => clearInterval(intervaloRef.current);
   }, []);
 
   const irPara = (index) => {
@@ -27,6 +33,8 @@ export const SlidesNoticias = () => {
       setIndexAtual(index);
       setIsTransitioning(false);
     }, 200);
+
+    iniciarIntervalo();
   };
 
   const noticia = noticias[indexAtual];

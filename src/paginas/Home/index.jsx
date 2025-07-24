@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
 import { SlidesNoticias } from "../../componentes/Noticias/noticiasSlider";
+import { CarrosselHome } from "../../componentes/CarrosselHome/carrosselHome";
 
 function Home() {
   return (
@@ -47,8 +48,8 @@ function Home() {
         ></img>
         <article>
           <h1>O que você vai fazer no curso?</h1>
-          <span>carrossel</span>
         </article>
+        <CarrosselHome />
         <article>
           <h1>E tem mais!</h1>
           <span>Além das disciplinas, você vai:</span>

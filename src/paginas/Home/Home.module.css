@@ -76,13 +76,11 @@
 }
 
 .homeApresentacao {
-  width: 100%;
   background-color: var(--brancosoft);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem;
-  gap: 4rem;
+  margin-inline: 5rem;
 }
 
 .homeApresentacao p {
@@ -95,10 +93,12 @@
 }
 
 .grafFolha {
-  margin-top: 4rem;
+  display: block;
   width: 100%;
-  padding-left: 14rem;
-  padding-right: 14rem;
+  margin-inline: auto;
+  max-width: 80vw;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .homeApresentacao h1 {
