@@ -10,6 +10,7 @@ export const InputText = ({
   error,
   disabled = false,
   required = false,
+  className = "",
 }) => {
   return (
     <div className="input-text-wrapper">
@@ -25,7 +26,9 @@ export const InputText = ({
         onChange={(e) => onChange && onChange(e)}
         placeholder={placeholder}
         disabled={disabled}
-        className={`input-text-input ${error ? "input-text-error" : ""}`}
+        className={`input-text-input ${
+          error ? "input-text-error" : ""
+        } ${className}`}
       />
       {error && <span className="input-text-error-message">{error}</span>}
     </div>

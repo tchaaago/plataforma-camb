@@ -140,17 +140,19 @@
   color: var(--brancosoft);
   border: none;
   border-radius: 10px;
-  width: 250px;
-  height: 80px;
+  height: 8rem;
+  width: 25rem;
   padding: 1.5rem;
   background-color: var(--verdesecundario);
   cursor: pointer;
 }
 
 .botaoSemestre-optativa {
+  grid-column: 1 / span 2; /* ocupa as 2 colunas */
+  width: 100%; /* ocupa 100% da célula expandida */
   padding-top: 10px;
-  width: 100%;
 }
+
 
 .botaoSemestre:hover {
   background-color: var(--verdeterciario);

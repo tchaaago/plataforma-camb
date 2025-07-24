@@ -25,3 +25,86 @@
 .optativaButton {
   grid-column: 1 / -1;
 }
+
+.close-button {
+  position: absolute;
+  margin-top: -7rem;
+  margin-left: 72.5rem;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalH2 {
+  margin-bottom: 2rem;
+}
+
+
+.formItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.campoCodigo {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.2s;
+  max-height: 3.5rem;
+  max-width: 12rem;
+  margin-right: auto;
+}
+
+.campoCodigo:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.selectCarga {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.2s;
+  max-height: 3.5rem;
+  margin-left: auto;
+}
+
+.campoNome {
+  width: 53rem;
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+.buttonForm {
+  background-color: var(--verdeprimario);
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+  border-radius: 7px;
+  font-family: inherit;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.buttonForm:hover {
+  background-color: var(--verdesecundario);
+}

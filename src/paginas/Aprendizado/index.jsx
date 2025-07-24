@@ -129,7 +129,11 @@ function Aprendizado() {
               {dadosCurricularesData.map((item, index) => (
                 <button
                   key={item.nome}
-                  className={styles.botaoSemestre}
+                  className={`${styles.botaoSemestre} ${
+                    item.nome === "Optativas"
+                      ? styles["botaoSemestre-optativa"]
+                      : ""
+                  }`}
                   onClick={() => handleOpenModal(index)}
                 >
                   {item.nome}

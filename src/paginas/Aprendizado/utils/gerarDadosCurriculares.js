@@ -2,7 +2,9 @@ export function gerarDadosCurriculares(disciplinas) {
   const semestresMap = {};
 
   disciplinas.forEach((disc) => {
-    const periodoKey = disc.semestre === 0 ? "Optativas" : `${disc.semestre}º Semestre`;
+    const periodoKey =
+  disc.semestre === "optativa" ? "Optativas" : `${disc.semestre}º Semestre`;
+
 
     if (!semestresMap[periodoKey]) {
       semestresMap[periodoKey] = {
@@ -18,7 +20,6 @@ export function gerarDadosCurriculares(disciplinas) {
       codigo: disc.codigo,
       nome: disc.nome,
       ch: disc.carga?.toUpperCase() || "0H",
-      natureza: disc.natureza?.toUpperCase() || "OBRIGATORIA",
     });
 
     semestresMap[periodoKey].chTotal += chNumber;

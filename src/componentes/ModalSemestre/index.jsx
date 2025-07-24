@@ -34,7 +34,6 @@ export const ModalSemestre = ({
               <th>CÓDIGO</th>
               <th>DISCIPLINA</th>
               <th>CH</th>
-              <th>NATUREZA</th>
             </tr>
           </thead>
           <tbody>
@@ -43,7 +42,6 @@ export const ModalSemestre = ({
                 <td>{disciplina.codigo}</td>
                 <td>{disciplina.nome}</td>
                 <td>{disciplina.ch}</td>
-                <td>{disciplina.natureza}</td>
               </tr>
             ))}
           </tbody>

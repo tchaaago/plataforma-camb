@@ -6,3 +6,13 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+.content {
+  width: 80rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 3rem;
+  background-color: var(--brancosoft);
+}
