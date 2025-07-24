@@ -1,3 +1,7 @@
 export const MatrizCurricular = () => {
-  return <div className="board"></div>;
+  return (
+    <div className="board">
+      <h1>Matriz Curricular</h1>
+    </div>
+  );
 };

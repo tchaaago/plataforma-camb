@@ -1,7 +1,7 @@
 export const Noticias = () => {
   return (
-    <div>
-      <main>noticias</main>
+    <div className="board">
+      <h1>Notícias</h1>
     </div>
   );
 };

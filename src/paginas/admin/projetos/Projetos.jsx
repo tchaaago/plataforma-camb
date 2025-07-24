@@ -1,7 +1,7 @@
 export const Projetos = () => {
   return (
-    <div>
-      <main>projetos</main>
+    <div className="board">
+      <h1>Projetos</h1>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 export const Acervo = () => {
   return (
-    <div>
-      <main>acervo</main>
+    <div className="board">
+      <h1>Acervo</h1>
     </div>
   );
 };

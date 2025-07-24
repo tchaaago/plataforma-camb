@@ -11,7 +11,7 @@ export const ConsultaPorSemestre = () => {
   const [semestreSelecionado, setSemestreSelecionado] = useState(null);
   const [chMinima, setChMinima] = useState("");
   const [fields, setFields] = useState([
-    Array.from({ length: 4 }, () => ({ codigo: "", nome: "", carga: "64h" })),
+    Array.from({ length: 2 }, () => ({ codigo: "", nome: "", carga: "64h" })),
   ]);
 
   const handleChange = (index, key, value) => {
@@ -28,7 +28,7 @@ export const ConsultaPorSemestre = () => {
     setSemestreSelecionado(semestre);
     setOpen(true);
     setFields(
-      Array.from({ length: 4 }, () => ({
+      Array.from({ length: 2 }, () => ({
         codigo: "",
         nome: "",
         carga: "64h",
@@ -80,6 +80,9 @@ export const ConsultaPorSemestre = () => {
   return (
     <div className="board">
       <h1>Consulta por semestre</h1>
+      <h2 className="semesterh2">
+        Clique em um semestre para atualizar as disciplinas
+      </h2>
       <div className="botoes">
         {Array.from({ length: 8 }).map((_, index) => (
           <Button
@@ -167,7 +170,7 @@ export const ConsultaPorSemestre = () => {
                 />
               </div>
 
-              {fields.length < 6 ? (
+              {fields.length < 8 ? (
                 <Button
                   className={"buttonForm"}
                   type="button"
@@ -177,7 +180,7 @@ export const ConsultaPorSemestre = () => {
                 ></Button>
               ) : (
                 <p style={{ color: "red", marginBottom: "1rem" }}>
-                  Máximo de 6 disciplinas atingido.
+                  Máximo de 8 disciplinas atingido.
                 </p>
               )}
 
